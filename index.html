@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks website with API</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="site">
+    <main class="site-content">
+        <div class="centerWrapper">
+            <h1 id="websiteTitle">Need a drink?</h1>
+            <p>This website can help you figure out what <br>
+            drinks you can make based on ingredients that you (may) already have.</p>   
+
+            <div class="searchField" type="search">
+                <input type="search" id="searchInput" placeholder="Please enter the name of a drink"/>
+                <button id="searchButton" onclick="getDrink()">Search</button>
+            </div>
+            <div id="results"></div>
+        </div>
+
+        <div id="drinksContainer">
+        </div>
+    </main>
+    <footer>This website is build on the API from <a href="https://www.thecocktaildb.com/api.php">thecocktaildb.com</a></footer>
+
+    <script type="text/javascript" src="drinksJs.js"></script>
+</body>
+</html>

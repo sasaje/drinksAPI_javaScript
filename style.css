@@ -1,0 +1,169 @@
+body{
+    font-family: roboto;
+}
+h1, h2, h3, .boldTitle{
+    font-family: 'Noto Serif', serif;
+    font-weight: 900;
+}
+.centerWrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: lightseagreen;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+h1#websiteTitle {
+    font-size: 11vh;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centerWrapper p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.searchField {
+    margin: 0 auto !important;
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+input[type="search"] {
+    padding: 20px;
+    width: 60%;
+    margin-right: 0 !important;
+    border: 2px lightseagreen dotted;
+}
+input:focus{
+    outline: none;
+}
+
+button#searchButton {
+    padding: 20px;
+    background: black;
+    color: #ffffff;
+    border: solid 1px black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+div#results {
+    width: 160px;
+    margin: auto;
+}
+span.title {
+    text-align: center;
+    color: white;
+    margin: auto 0 !important;
+    display: block;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    border-bottom: solid 1px;
+}
+
+div#drinksContainer {
+    margin: 10px;
+}
+
+.drink{
+    width: 80%;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    display: flow-root;
+    margin-left: auto;
+    margin-right: auto;
+}
+.drink h2{
+    margin-top: 0;
+}
+.left {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.right {
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.drink img.drinkImg{
+    width: 300px;
+    height: 300px;
+}
+
+.drink h2 span{
+    font-size: 20px;
+    color: lightseagreen
+}
+
+.italic{
+    font-style: italic;
+}
+
+footer, footer a{
+    color: lightgrey;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/*For sticky footer*/
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  .site-content {
+    flex: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    .drink{
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .left, .right {
+        float: left;
+    }
+}
+
+/* On screens that are 720px or less */
+@media screen and (max-width: 720px) {
+    .left, .right {
+        width: auto;
+    }
+    h1#websiteTitle {
+        font-size: 5vh;
+    }
+}
+
+/* On screens that are 450px or less*/
+@media screen and (max-width: 450px) {
+    .drink img.drinkImg {
+        width: 150px;
+        height: 150px;
+    }
+}
