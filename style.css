@@ -115,6 +115,11 @@ div#drinksContainer {
     font-style: italic;
 }
 
+.errorHandlingWrapper{
+    text-align: center;
+}
+
+
 footer, footer a{
     color: lightgrey;
     font-size: 12px;
@@ -157,6 +162,10 @@ footer, footer a{
     }
     h1#websiteTitle {
         font-size: 5vh;
+    }
+    .errorHandlingWrapper h1 {
+        background: font-s;
+        font-size: 25px;
     }
 }
 

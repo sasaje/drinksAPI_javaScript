@@ -65,6 +65,17 @@ async function getDrink(){
     const data = await response.json();
     console.log(data);
 
+    /* ErrorHandling if response is null */
+    if(Object.entries(response).length === 0){
+        console.log("No results found. - JSON return null");
+        document.getElementById("drinksContainer").innerHTML = `
+            <div class="errorHandlingWrapper">
+                <h1>No results, please try another keyword.</h1>
+                <p>We're sorry, but the word you are searching for is not in our database yet.</p>
+            </div>
+        `;
+    }
+
     /* 'Extract' objects attributes from JSON in console.log */
     console.log("idDrink " + data.drinks[0].idDrink);
     console.log("strDrink " + data.drinks[0].strDrink);
